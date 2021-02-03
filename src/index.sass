@@ -1,0 +1,56 @@
+$font-stack: 'Courier New', sans-serif
+
+.app
+  padding: 30px
+  font-family: $font-stack
+  display: table
+  margin: 0 auto
+
+%btn-shared
+  font-family: $font-stack
+  height: 20px
+  margin: 2px
+  width: fit-content
+  float: right
+
+.btn
+  @extend %btn-shared
+
+.btn-form 
+  @extend %btn-shared
+  margin-right: 11.5px
+
+.btn-group button 
+  float: left
+
+.header 
+  font-size: 20px
+  font-family: $font-stack
+  text-align: center
+
+.input
+  font-family: $font-stack
+  width: 250px
+
+.todo-list
+  background: #e8e8e8
+  border-radius: 4px
+  padding: 5px
+  width: 400px
+  font-family: $font-stack
+  display: inline-block
+
+.todo 
+  background: #fff
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15)
+  padding: 3px 10px
+  font-size: 12px
+  margin-bottom: 6px
+  border-radius: 3px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  font-family: $font-stack
+
+.todo-edit
+  display: contents
